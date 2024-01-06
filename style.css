@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #262626;
+  font-family: sans-serif;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.title {
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+.tabs label {
+  font-size: 25px;
+  color: orange;
+  border-bottom: 2px solid orange;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.tabs label:hover {
+  background: rgba(255, 166, 0, 0.283);
+}
+.tabs input {
+  display: none;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+#car1:checked ~ .lexus {
+  background: rgb(9, 12, 18);
+  color: white;
+}
+#car2:checked ~ .merc {
+  background: rgb(72, 130, 236);
+  color: white;
+}
+#car3:checked ~ .bmw {
+  background: rgb(72, 130, 236);
+  color: white;
+}
+#car4:checked ~ .toyota {
+  background: rgb(72, 130, 236);
+  color: white;
+}
+.tabs img {
+  width: 100%;
+  display: none;
+}
+#car1:checked ~ .lexus-img {
+  display: block;
+}
+#car2:checked ~ .merc-img {
+  display: block;
+}
+#car3:checked ~ .bmw-img {
+  display: block;
+}
+#car4:checked ~ .toyota-img {
+  display: block;
+}
